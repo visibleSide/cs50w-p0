@@ -1,0 +1,74 @@
+// atleast one variable
+$color: blue;
+// atleast one sass nesting
+%tables{
+    border: 1px solid red;
+    border-collapse:inherit;
+    padding: 30px;
+    margin-top: 0px;
+    font-size: 20px;
+    width: 100%
+}
+table {
+    th {
+        @extend %tables;
+
+        background-color: #fadf;
+        border-collapse: collapse;
+    }
+     td {
+         @extend %tables;
+         border-collapse: collapse;
+        }
+}
+//atleast one sass inheritance
+%messages{
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: auto;
+    color: skyblue;
+
+}
+.aboutus {
+    margin: 2px;
+    padding: 2px;
+    width: 90%;
+    float: center;
+}
+.blues{
+    @extend %messages;
+    border-color: $color;
+    background-color: blue;
+}
+.success{
+    @extend %messages;
+    border-color: green;
+       background-color: green;
+}
+.error{
+    @extend %messages;
+    border-color: red;
+
+}
+.warning{
+    @extend %messages;
+    background-color: yellow;
+}
+a::before{
+    font-weight: bold;
+    color:yellow;
+}
+@media (min-width: 600px) {
+  body {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: #34F;
+  }
+}
+@media (max-width: 599px) {
+  body {
+       display: flex;
+      flex-wrap: wrap;
+      background-color: yellow;
+  }
+}

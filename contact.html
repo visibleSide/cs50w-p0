@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/sass.css">
+    <title>Project0</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-dark navbar-expand-md" id="app-navbar">
+        <div class="container-fluid"><a class="navbar-brand" href="#"><i class="icon ion-ios-infinite" id="brand-logo"></i></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navcol-1">
+            <ul class="nav navbar-nav ml-auto">
+              <li class="nav-item" role="presentation"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item" role="presentation"><a class="nav-link" href="services.html">Services</a></li>
+              <li class="nav-item" role="presentation"><a class="nav-link" href="projects.html">Projects</a></li>
+              <li class="nav-item" role="presentation"><a class="nav-link active" href="contact.html">Contact us</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="row">
+                <div class="col-xl-8 offset0xl-2 py-5">
+                    <h1>contact</h1>
+                    <p> get in touch with us</p>
+                    <form id="contact-from" role="form">
+                        <div class="controls">
+                            <div class="col-md6">
+                                <label for="contact">Full name </label>
+                                <input id="contact" type="text" class="form-control" placeholder="full name here" required="required">
+                                <div class="help-block with errors"></div>
+                            </div>
+
+                        </div>
+                </div>
+                
+            </div>
+            <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="form_message">Message *</label>
+                    <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required"></textarea>
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <input type="submit" class="btn btn-success btn-send" value="Send message">
+            </div>
+        </div>
+
+        </form>
+      </main>
+  </body>
+</html>
